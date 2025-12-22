@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">Nitin Bhandare</div>
-
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul class="nav-link">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -26,7 +27,7 @@
                 I build clean, responsive websites and love working on AI based projects.
             </p>
             <div class="hero-buttons">
-                <a href="#" class="btn">Download Resume</a>
+                <a href="nitin.pdf" class="btn">Download Resume</a>
                 <a href="#contact" class="btn-outline">Contact Me</a>
             </div>
         </div>
@@ -36,11 +37,15 @@
         <h2>About Me</h2>
         <p>
             I am an AI Engineering student with a strong interest in web devlopement and artificial intelligence. 
-            I enjoy building responsive websites and working on real-world projects that help me to improve my skills.
+            I enjoy building responsive websites and working on real-world projects that help me to improve my skills. <br>
+            Currently pursuing B.E. in AI Engineering, I have a strong foundation in programming, data structures, and problem-solving. Along with academics, 
+            I actively work on real-time projects to improve my development and logical thinking skills.
         </p>
         <p id="p2">
-            Currently, I am focusing on improving my programming skills and building projects that strengthen my 
-            problem-solving and devlopment abilities.
+            I am focusing on improving my programming skills and building projects that strengthen my 
+            problem-solving and devlopment abilities. <br>
+            I have hands-on experience in Java, C++, Python, and Web Development (HTML, CSS, JavaScript).
+             I am familiar with SQL databases, basic backend concepts, and version control using Git & GitHub. I focus on writing clean, efficient, and maintainable code.
         </p>
     </section>
 
@@ -77,13 +82,14 @@
             <div class="skill-card">
                 <h3>C++</h3>
                     <p>
-                        I am use HTML and CSS to build clean, responsive, and visually appealing website layouts with proper structure and styling. 
+                        I have a strong foundation in C++ programming, with a clear understanding of object-oriented programming (OOP) concepts and problem-solving techniques.
+                         I use C++ to build efficient, logical, and performance-oriented programs. 
                     </p>
             </div>
             <div class="skill-card">
                 <h3>My-SQL</h3>
                     <p>
-                        I am use HTML and CSS to build clean, responsive, and visually appealing website layouts with proper structure and styling. 
+                        I have a basic to intermediate understanding of MySQL, focusing on designing and managing relational databases for web applications. 
                     </p>
             </div>
         </div>
@@ -94,21 +100,20 @@
 
         <div class="projects-container">
             <div class="project-card">
-                <h3>To-Do List Web</h3>
+                <h3>To - Do List Web</h3>
                 <p>
                     A simple and interactive to-do list website that allows to add, delete and manage daily task efficiently.
-                    I is very useful for daily routine. 
+                    It is very useful for daily routine. 
                 </p>
                 <p class="tech">
                     Tech Used : HTML, CSS, JavaScript
                 </p>
                 <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn-outline">GitHub</a>
+                    <a href="https://github.com/NitinCodes2408/To-Do-List-Web" class="btn" target="_blank"  rel="noreferrer">GitHub</a>
                 </div>
             </div>
             <div class="project-card">
-                <h3>Portfolio Website</h3>
+                <h3>My Portfolio Website</h3>
                 <p>
                     A personal Portfolio website designed to showcase my skills, project and contact information in a profassional manner.
                 </p>
@@ -116,21 +121,19 @@
                     Tech Used : HTML, CSS, JavaScript
                 </p>
                 <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn-outline">GitHub</a>
+                    <a href="https://github.com/NitinCodes2408/Portfolio" class="btn-outline" target="_blank"  rel="noreferrer">GitHub</a>
                 </div>
             </div>
             <div class="project-card">
                 <h3>AI Chatbot Assistant</h3>
                 <p>
-                    A personal Portfolio website designed to showcase my skills, project and contact information in a profassional manner.
+                    I developed an AI-based chatbot that can understand user inputs and respond intelligently using predefined logic and AI concepts.
                 </p>
                 <p class="tech">
                     Tech Used : HTML, CSS, JavaScript
                 </p>
                 <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn-outline">GitHub</a>
+                    <a href="https://github.com/NitinCodes2408/AI-Chatbot" class="btn-outline" target="_blank"  rel="noreferrer">GitHub</a>
                 </div>
             </div>
         </div>
@@ -139,11 +142,28 @@
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
         <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
+        <p id="success-msg">Message sent successfully✅</p>
     </section>
+    <footer class="footer">
+        <p>
+            Made with 💌 by <span>Nitin Bhandare</span>
+        </p>
+
+        <div class="footer-links">
+            <a href="https://github.com/NitinCodes2408" target="_blank"> <i class="fab fa-github"></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/nitin-bhandare/" target="_blank"> <i class="fab fa-linkedin"></i>linkedin</a>
+            <a href=""></a>
+        </div>
+
+        <p class="copyright">
+            @ 2025 All rights reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
